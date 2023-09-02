@@ -22,10 +22,11 @@ export class ContextMenu extends Menu {
 
   add(module) {
     this.menuItems.push(module)
-    const menuItem = module.toHTML()
-    menuItem.addEventListener('click', () => {
-      module.trigger()
-    })
+    const menuItem = document.createElement('li')
+    menuItem.classList.add('menu-item')
+    menuItem.dataset.type = module.type
+    menuItem.textContent = module.text
+    menuItem.addEventListener('click', () => module.trigger())
     this.menu.append(menuItem)
   }
 
