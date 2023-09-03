@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 
 * {
     margin: 0;
@@ -8,18 +8,17 @@
 
 body {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     height: 100vh;
     width: 100%;
     padding: 2rem;
 }
 
 .menu {
-    cursor: pointer;
     user-select: none;
     position: fixed;
     z-index: 1000;
-    width: 180px;
+    width: 150px;
     background: #1b1a1a;
     border-radius: 5px;
     display: none;
@@ -31,13 +30,11 @@ body {
 }
 
 .menu .menu-item {
-    display: flex;
-    flex-direction: column;
     padding: 8px 10px;
     font-size: 1rem;
     color: #eee;
     cursor: pointer;
-    transition: background-color .2s ease-in;
+    transition: background-color 0.2s ease-in;
     border-radius: inherit;
 }
 
@@ -45,42 +42,30 @@ body {
     background: #343434;
 }
 
-
-
-button{
-    width: 50px;
-    margin: 1px;
-    height: 25px;
-    background-color: #343434;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    transition: .3s;
-    margin-top: 10px;
-    border: 1px solid rgb(111, 111, 111);
-}
-
-button:hover{
-    transform: scale(1.01);
-    box-shadow: rgba(197, 197, 197, 0.35) 0px 5px 15px;
-}
-
-.buttonsContainer{
+.timer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    font-size: 30px;
+    font-size: 80px;
+    margin: 10px;
+    width: 300px;
+    background: #000000a2;
+    color: white;
+    border-radius: 20px;
 }
 
-input{
-    width: 150px;
-    height: 25px;
-    outline: none;
-    border: 2px solid black;
-    padding: 5px;
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    background: rgba(16, 30, 55, 0.353);
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
 }
 
-input:focus{
-    border-color: rgb(128, 0, 0);
-    outline: red;
+button:hover {
+    transform: scale(1.01);
+    background: rgb(38, 69, 123);
 }
